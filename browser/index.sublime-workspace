@@ -1,0 +1,375 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"file",
+				"fileText"
+			],
+			[
+				"read",
+				"readFile"
+			],
+			[
+				"prom",
+				"promisifiedReadFile"
+			],
+			[
+				"promi",
+				"promisifiedReadFile"
+			],
+			[
+				"pro",
+				"process"
+			],
+			[
+				"new",
+				"newPrompt"
+			],
+			[
+				"for",
+				"forEachCell"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"set",
+				"setAttribute"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"se",
+				"setAttribute"
+			],
+			[
+				"game",
+				"gameOfLife"
+			],
+			[
+				"rec",
+				"recMergeSplit"
+			],
+			[
+				"lengt",
+				"getLength"
+			],
+			[
+				"arr2",
+				"arr2_index"
+			],
+			[
+				"sec",
+				"second0"
+			],
+			[
+				"index",
+				"index_second"
+			],
+			[
+				"ind",
+				"index_second"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"len",
+				"length_second"
+			],
+			[
+				"ar",
+				"arguments"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"next",
+				"nextArr"
+			],
+			[
+				"to",
+				"toEqual"
+			],
+			[
+				"co",
+				"comparisons"
+			],
+			[
+				"mat",
+				"matchFunc"
+			],
+			[
+				"selector",
+				"selectorType"
+			],
+			[
+				"sele",
+				"selectorsArray"
+			],
+			[
+				"select",
+				"selectorFunction"
+			],
+			[
+				"math",
+				"matchFunctionMaker"
+			],
+			[
+				"matc",
+				"matchFunctionMaker"
+			],
+			[
+				"selecto",
+				"selectorMatchFunc"
+			],
+			[
+				"sel",
+				"selectorType"
+			],
+			[
+				"ma",
+				"matchers"
+			],
+			[
+				"tag",
+				"tagName"
+			],
+			[
+				"child",
+				"childArray"
+			],
+			[
+				"chil",
+				"children"
+			],
+			[
+				"matchFunc",
+				"matchFunc"
+			],
+			[
+				"traverse",
+				"traverseDomAndCollectElements"
+			],
+			[
+				"reg",
+				"regEx"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"result",
+				"resultSet"
+			],
+			[
+				"trav",
+				"traverseDomAndCollectElements"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Rudger/CLASS/fullstack/practical-promises/exercise-one.spec.js",
+		"/Users/Rudger/CLASS/fullstack/practical-promises/exercise-two.spec.js",
+		"/Users/Rudger/CLASS/fullstack/practical-promises/utils.js",
+		"/Users/Rudger/CLASS/fullstack/practical-promises/exercise-two.js",
+		"/Users/Rudger/CLASS/fullstack/node-shell/bash.js",
+		"/Users/Rudger/CLASS/fullstack/node-shell/command.js",
+		"/Users/Rudger/CLASS/fullstack/game-of-life/index.html",
+		"/Users/Rudger/CLASS/fullstack/game-of-life/game.js",
+		"/Users/Rudger/CLASS/fullstack/sorting/mergesort.spec.js",
+		"/Users/Rudger/CLASS/fullstack/sorting/speed.js",
+		"/Users/Rudger/CLASS/fullstack/sorting/testem.json",
+		"/Users/Rudger/CLASS/fullstack/sorting/bubblesort.js",
+		"/Users/Rudger/CLASS/fullstack/sorting/bubblesort.spec.js",
+		"/Users/Rudger/CLASS/fullstack/sorting/mergesort.js",
+		"/Users/Rudger/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Rudger/CLASS/fullstack/sorting/bubble.js",
+		"/Users/Rudger/CLASS/fullstack/selector.js/spec/selectorSpec.js",
+		"/Users/Rudger/CLASS/fullstack/selector.js/SpecRunner.html",
+		"/Users/Rudger/CLASS/fullstack/selector.js/src/selector.js"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"done",
+			"done =",
+			"priorNumGreen",
+			"fn",
+			"fs.readFile(file[0], \"utf8\", function (err, data) {\n			if (err) {\n				throw err;\n			} \n			process.stdout.write(data);\n		});",
+			"index_arr2",
+			"index_arr1",
+			"arr10",
+			"first",
+			"arr20",
+			"second",
+			"] ",
+			"second",
+			"i",
+			"j",
+			"i2",
+			"2",
+			"i",
+			"arr1",
+			"  for(; i < length; i ++ ) {\n    child = children[i];\n    matchFunc(child) && resultSet.push(child);\n  //  child.children.length && (traverseDomAndCollectElements\n  }"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

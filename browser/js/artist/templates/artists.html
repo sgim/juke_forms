@@ -1,7 +1,8 @@
 <div>
-  <h3>Artists</h3>
+	<h3>Artists</h3>
+	<input ng-model="artistName"/>
     <div class="list-group">
-      <div class="list-group-item" ng-repeat="artist in artists">
+			<div class="list-group-item" ng-repeat="artist in artists | filter: {name: artistName}">
       <a ui-sref="artist({artistId: artist._id})">{{ artist.name }}</a>
     </div>
   </div>
