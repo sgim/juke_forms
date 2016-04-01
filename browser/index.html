@@ -44,7 +44,7 @@
               <a ui-sref="newPlaylist" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-plus"></span> PLAYLIST</a>
 						</p>
             <p class="playlist-item" ng-repeat="playlist in playlists">
-						  <a>{{playlist.name}}</a>
+						  <a ui-sref="singlePlaylist({ id: playlist._id })">{{playlist.name}}</a>
 					  </p>
           </section>
         </sidebar>
