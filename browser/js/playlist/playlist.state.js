@@ -16,7 +16,7 @@ juke.config(function($stateProvider) {
     $stateProvider.state("singlePlaylist", {
         url: "/playlist/:id",
         templateUrl: "/js/playlist/templates/playlist.html",
-        controller: function(PlayerFactory, $scope, $stateParams, playlistFactory, $log, SongFactory) {
+        controller: function(ArtistFactory, PlayerFactory, $scope, $stateParams, playlistFactory, $log, SongFactory) {
             // angular.extend($scope, PlayerFactory);
             $scope.toggle = function(song) {
                 if (song !== PlayerFactory.getCurrentSong()) {
@@ -35,32 +35,39 @@ juke.config(function($stateProvider) {
             $scope.isPlaying = function(song) {
                 return PlayerFactory.isPlaying() && PlayerFactory.getCurrentSong() === song;
             };
-            SongFactory.getAllSongs
+
+            ArtistFactory.fetchAll()
+            .then(function(artists) {
+            	$scope.artists = artists;
+            	return SongFactory.getAllSongs;
+            })
             .then(function(songs) {
                 $scope.songs = songs;
         		return playlistFactory.getById($stateParams.id);
             })
             .then(function(playlist) {
                 $scope.playlist = playlist;
-                var i = 0, len =  playlist.artists.length;
                 $scope.playlist.songs.forEach(function (song) {
                 	SongFactory.convert(song);
-                	song.artists = song.artists.map(function (artistId) {
-                		for(i = 0; i < len; i++) {
-                			if(artistId === playlist.artists[i]._id) return playlist.artists[i];
-                		}
-                		return artistId;
-                	});
+                	song.artists = song.artists.map(getArtistId);
                 });
             })
             .catch($log.error);
             $scope.addSong = function(song) {
                 SongFactory.convert(song);
+                song.artists = song.artists.map(getArtistId);
                 $scope.playlist.songs.push(song);
                 playlistFactory.addSong($scope.playlist._id, song);
                 $scope.addSongs.newSong.$pristine = true;
             };
             // $scope.convert = SongFactory.convert;
+            function getArtistId (artistId) {
+            	var len = $scope.artists.length;
+        		for(var i = 0; i < len; i++) {
+        			if(artistId === $scope.artists[i]._id) return $scope.artists[i];
+        		}
+        		return artistId;
+              }
 
             $scope.deleteSong = function(song) {
             	playlistFactory.deleteSong($scope.playlist._id, song);

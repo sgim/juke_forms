@@ -45,7 +45,7 @@
                 <td>{{ song.name }}</td>
                 <td><span ng-repeat="artist in song.artists">{{ artist.name }}{{ $last ? '' : ', ' }}</span></td>
                 <td>{{ song.genres.join(', ') }}</td>
-                <td><button class="btn btn-default btn-xs" ng-click="deleteSong(song)">x</button></td>
+                <td><button class="btn btn-default btn-xs" ng-click="deleteSong(song)"> x </button></td>
             </tr>
         </tbody>
     </table>
